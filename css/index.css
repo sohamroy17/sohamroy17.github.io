@@ -1,0 +1,284 @@
+@font-face {
+	font-family: "koliko Light";
+ 	src: url("../font/koliko-Light.ttf"); 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e6e6e6;
+    font-family: 'Merriweather';
+    overflow-x: hidden;
+}
+a{
+    text-decoration:none;
+}
+header{
+    height: auto;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color: black;
+    width:100%;
+    padding-bottom:10px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 2;
+}
+main{
+    width:60%;
+    margin:auto;
+}
+#logo{
+    font-family: 'koliko Light';
+    color:#ffb300;
+    padding-left: 40px;
+    font-size:5vw;
+}
+#nav{
+    float:right;
+    display:flex;
+    align-items:center;
+}
+.nav-btn{
+    display: inline;
+    padding:5px 20px;
+    border-radius: 5px;
+    color:white;
+    font-size: 1.3vw;
+}
+.nav-btn:hover{
+    background-color:#b8b8b8;
+    cursor: pointer;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+.grid-item{
+    text-align:center;
+    font-size: 1.9vw;
+}
+#product{
+    background-color: #ffb300;
+    padding:5px 20px 20px;
+    width:100%;
+    margin:auto;
+}
+.grid30{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+#button{
+    color: white;
+    background-color: black;
+    border:1px solid black;
+    border-radius:5px;
+    padding:3px 10px;
+    cursor: pointer;
+    font-size: 1.3vw;
+}
+.circle{
+    background-color:grey;
+    width:20px;
+    height:20px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.journey{
+    text-align:center;
+    font-size: 1.4vw;
+}
+#oj{
+    width:50%;
+}
+#ourpText1{
+    width:70%;
+    margin:auto;
+}
+#ourpText2{
+    display: none;
+    width:70%;
+    margin:auto;
+    font-size: 1.5vw;
+}
+ul{
+    text-align: left;
+}
+#email{
+    border-radius:5px;padding:10px 20px;font-size:1.5vw;
+}
+footer{
+    padding:1% 0%;
+    margin: auto;
+    background-color:grey;
+    color:white;
+    font-size:1.2vw;
+    font-family: "Montserrat";  
+}
+#numberCount{
+    text-align:center;
+}
+#number{
+    font-size:3vw;
+}
+#sign{
+    font-size:3vw;
+    display:none;
+}
+#parentContainer{
+    width:50%;
+    margin:auto;
+    overflow:hidden;
+    text-align:center;
+}
+#container{
+    display:flex;
+    align-items:center;
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+.slide{
+    min-width:100%;
+    width:100%;
+    position: relative;
+    animation:'slide1 2s 1';
+}
+@keyframes slide1{
+    0%{
+        right:0%;
+    }
+    100%{
+        right:100%;
+    }
+}
+@keyframes slide2{
+    0%{
+        right:100%;
+    }
+    100%{
+        right:200%;
+    }
+}
+@keyframes slide3{
+    0%{
+        right:200%;
+    }
+    100%{
+        right:300%;
+    }
+}
+@keyframes slide4{
+    0%{
+        right:300%;
+    }
+    100%{
+        right:0%;
+    }
+}
+#social{
+    margin:auto;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 3% 3.5% 3% 3%;
+    grid-gap:2%;
+}
+#subBtn{
+    background-color: white;
+    color:black;
+}
+#subBtn:hover{
+    background-color: grey;
+}
+.si{
+    width:100%;
+    height: 100%;
+    border-radius:5px;
+}
+#socialConnect{
+    margin:auto;
+}
+main{
+    text-align:center;
+}
+@media only screen and (max-width:796px){
+    main{
+        width:100%;
+    }
+    #product{
+        width:90%;
+    }
+    #logo{
+        font-size: 7vw;
+    }
+    .nav-btn{
+        padding:5px 10px;
+        font-size: 2vw;
+    }
+    #logo{
+        font-size: 7vw;
+    }
+    .journey{
+        font-size: 2vw;
+    }
+    #ourpText2{
+        font-size: 2vw;
+    }
+    footer{
+        font-size:3vw;
+    }
+    #social{
+        grid-template-columns: 5% 5.5% 5% 5%;;
+    }
+    #number{
+        font-size: 4vw;
+    }
+    #sign{
+        font-size: 4vw;
+    }
+}
+@media only screen and (max-width: 490px){
+    #logo{
+        font-size: 9vw;
+    }
+    .nav-btn{
+        font-size: 2.5vw;
+    }
+    .grid-item{
+        font-size: 3vw;
+    }
+    #button{
+        font-size: 2.5vw;
+    }
+    #email{
+        font-size: 2.7vw;
+    }
+    .journey{
+        font-size: 2.8vw;
+    }
+    #ourpText2{
+        font-size: 2.6vw;
+    }
+    #number{
+        font-size: 6vw;
+    }
+    #sign{
+        font-size: 6vw;
+    }
+}
+@media only screen and (max-width:400px){
+    #oj{
+        width:70%;
+    }
+    #logo{
+        font-size: 10vw;
+    }
+    #ourpText2{
+        font-size:3vw;
+    }
+}

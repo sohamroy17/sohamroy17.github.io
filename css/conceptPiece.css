@@ -1,0 +1,141 @@
+body{
+    background-color: #e6e6e6;
+}
+#home{
+    position:absolute;
+}
+header{
+    width:20%;
+    text-align: center;
+    margin:auto;
+}
+#cp{
+    margin:auto;
+    background-color: black;
+    font-family:"Six Caps";
+}
+#i01{
+    width:15vw;
+    padding-top: 3%;;
+}
+#header_p{
+    font-size:6vw;
+    color:white;
+}
+main{
+    width:60%;
+    margin:auto;
+    text-align: center;
+}
+#colloquy{
+    margin:auto;
+    font-family: "anaktoria";
+    font-size:1.3vw;
+}
+#subscribe{
+    margin:auto;
+    position:relative;
+    font-size:1.5vw;
+    border-radius:5px;
+    padding: 1vw 2vw;
+    font-family: 'Open Sans';
+    background-image:linear-gradient(to bottom, #ff5500, #ffb300);
+    text-decoration:none;
+    color:black;
+    text-align:center;
+    box-shadow: black 5px 5px 10px;
+    z-index:1;
+    border-radius:5px;
+}
+#subscribe:hover{
+    box-shadow: black 2px 2px 5px;
+}
+.flex{
+    display:flex;
+    justify-content: space-around;
+}
+#cp-content01{
+    transform: rotateZ(345deg);
+    z-index:1;
+}
+#cp-content02{
+    transform: rotateZ(25deg);
+}
+#cpimg01{
+    width:80%;
+}
+#cpimg02{
+    width:80%;
+}
+#E_p{
+    margin:auto;
+    color:black;
+    font-family:"Montserrat";
+    font-weight:bold;
+    font-size:2vw;
+}
+#M_p{
+    margin:auto;
+    color:black;
+    font-family:"Montserrat";
+    font-weight:bold;
+    font-size:2vw;
+}
+#p{
+    margin:auto;
+    color:black;
+    font-family:"Montserrat";
+    font-size:2vw;
+}
+footer{
+    padding:1% 0%;
+    margin: auto;
+    background-color:grey;
+    color:white;
+    font-size:1.2vw;
+    font-family: "Montserrat";
+    
+}
+#social{
+    margin:auto;
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 3% 3.5% 3% 3%;
+    grid-gap:2%;
+}
+.si{
+    width:100%;
+    height: 100%;
+    border-radius:5px;
+}
+#socialConnect{
+    margin:auto;
+}
+@media only screen and (max-width:796px){
+    main{
+        width:100%;
+    }
+    #colloquy{
+        font-size:2vw;
+    }
+    #subscribe{
+        font-size:3vw;
+    }
+    footer{
+        font-size:3vw;
+    }
+    #social{
+        grid-template-columns: 5% 5.5% 5% 5%;;
+    }
+    #E_p, #M_p, #p{
+        font-size:4vw;
+    }
+}
+@media only screen and (max-width:550px){
+    #colloquy{
+        font-size:3vw;
+    }
+    #subscribe{
+        font-size:4vw;
+    }
+}

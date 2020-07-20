@@ -1,8 +1,292 @@
-<html>
-<head>
-	<meta http-equiv="refresh" content="0; url=http://tipoffhome.herokuapp.com" />
-</head>
-<body>
-Redirecting you to <a href="http://tipoffhome.herokuapp.com">tipoff home page</a>.
-</body>
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="pingback" href="https://www.thetipoff.me">
+        <link rel="icon" type="png" href="images/t.png">
+        <title>tipoff - First Newsletter Crafted for College Students</title>
+        <!-- style and script resources -->
+        <link rel="stylesheet" href="css/index.css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+        <!--meta properties -->
+        <meta name="description" content="Nothing can beat an amalgamation of text and visual. We at tipoff have it covered for you ranging from assistance in any competent field to keeping you up to date with social trends, series and wrapping crucial news in plain English." />
+        <!--detailed robots meta https://developers.google.com/search/reference/robots_meta_tag -->
+        <meta name="robots" content="all,index, follow, max-snippet: -1, max-image-preview:large, max-video-preview: -1" />
+        <!--open graph meta tags for social sites and search engines-->
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="tipoff" />
+        <meta property="og:description" content="Nothing can beat an amalgamation of text and visual. We at tipoff have it covered for you ranging from assistance in any competent field to keeping you up to date with social trends, series and wrapping crucial news in plain English." />
+        <meta property="og:site_name" content="tipoff Newsletter" />
+        <meta property="og:image" content="images/t.png" />
+        
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "tipoff",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "mahaveer nagar 2",
+    "addressLocality": "jaipur",
+    "addressRegion": "rajasthan",
+    "postalCode": "302018"
+  },
+  "telephone": "8769560176"
+}
+</script>
+
+
+        <!--twitter description-->
+        <!--<meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="." />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:site" content="@" />
+        <meta name="twitter:image" content="images/hom-banner-compressed.jpg" />
+        <meta name="twitter:creator" content="@" />-->
+        <!--opengraph tags for location or address for information panel in google-->
+        <!--<meta name="og:latitude" content="" />
+        <meta name="og:longitude" content="" />
+        <meta name="og:street-address" content="" />
+        <meta name="og:locality" content="" />
+        <meta name="og:region" content="" />
+        <meta name="og:postal-code" content="" />
+        <meta name="og:country-name" content="" />-->
+        <!--search engine verification-->
+        <!--<meta name="google-site-verification" content="" />
+        <meta name="yandex-verification" content="" />-->
+        <!--powered by meta-->
+        <!--<meta name="generator" content="" />-->
+        <!-- Site fevicon icons -->
+        <!--<link rel="icon" href="images/icon/cropped-cropped-favicon-1-1-32x32.png" sizes="32x32" />
+        <link rel="icon" href="images/icon/cropped-cropped-favicon-1-1-192x192.png" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="images/icon/cropped-cropped-favicon-1-1-180x180.png" />
+        <meta name="msapplication-TileImage" content="images/icon/cropped-cropped-favicon-1-1-270x270.png" />-->
+        <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <span id='logo'>tipoff</span>
+            <nav><ul id='nav'><li onclick='know()' class='nav-btn'>Product</li><a href="templates/conceptPiece.html"><li class='nav-btn'>Concept Piece</li></a><a href="templates/form.html"><li class='nav-btn' id='subBtn'>Subscribe</li></a></ul></nav>
+        </header><br /><br /><br /><br /><br />
+        <main>
+            <div class='grid' id='subscribe'>
+                <div class="grid-item"><img src="images/nwltr2.png" alt='newsletter' style="width: 100%;"></div>
+                <div class='grid-item' id='nwltrText'><h2>Simple and Crisp</h2><span>An ultimate piece for any College Student! </span><br /><br />
+                    <span>
+                        <a href="templates/form.html"><button id='button'>
+                            Subscribe Now
+                        </button></a>
+                    </span>
+                </div>
+            </div><br /><br /><br />
+            <div id='numberCount'>
+                <span id='number'><b>0</b></span><span id='sign'>+</span><br /> <span>Subscribers and increasing</span>
+            </div>
+            <br /><br /><br />
+            <div id='parentContainer'>
+            	<div id='container'>
+                    <img src='images/tn.jpeg' class='slide' id='slide-1' alt='image-cover'>
+                    <img src='https://i.ibb.co/cx4BmHV/20200614-192436-0000-page-001.jpg' class='slide' id='slide-2' alt='image-1'>
+                    <img src='https://i.ibb.co/WfrWrw4/20200614-192436-0000-page-002.jpg' class='slide' id='slide-3' alt='image-2'>
+                    <img src='https://i.ibb.co/ncf84Vh/20200614-192436-0000-page-003.jpg' class='slide' id='slide-4' alt='image-3'>
+            	</div><br />
+            	<span class='circle' onclick='goto1()'>
+            	</span>&nbsp;
+            	<span class='circle' onclick='goto2()'></span>&nbsp;
+            	<span class='circle' onclick='goto3()'></span>&nbsp;
+            	<span class='circle' onclick='goto4()'></span>&nbsp;
+    		</div>
+            <br /><br />
+            <div id='product'>
+                <h1 align='center'>Our Products</h1><br />
+                <div class='grid30'>
+                    <div class='grid-item' id='ourpText1'>Craft a newsletter for your business<br /><br /><button onclick="know()" id='button' style="background-color: #0041cc;">Know More</button></div>
+                    <div class='grid-item' id='ourpText2'><div>We Will:</div><ul><li>Design Your Newsletter</li><li>Fill it with amazing content</li><li>Send Your Newsletter</li></ul><div>You can sit back and Relax</div><br />
+                    <a href='mailto:newsletter.tipoff@gmail.com'>
+                    <button id='button' style='background-color:#0041cc;'>Ping Us</button></a>
+                </div>
+                    <div class='grid-item'><img style="width: 100%;" src="images/ourp.jpeg" alt='image-product'></div>
+                </div>
+            </div>
+            <div class="journey">
+                <h1>Our Journey!</h1>
+                <img id='oj' src="images/oj.png" alt='image-journey'>
+                <p>Started in the middle of crisis we wanted to spread creativity. So we started with three members to now a team of 10 people. The milestones we touched in the path is building a nationwide subsciber base, launching a podcast and counting..</p>
+            </div><br />
+        </main><br />
+        <footer>
+            <span id="socialConnect">Connect with us here:</span><br /><br /><br />
+            <div id="social">
+                <span><a href="https://www.facebook.com/Tipoff_newsletter-102457848142868"><img alt='facebook.png' class="si" src="images/facebook.png"></a></span>
+                <span><a href="mailto:newsletter.tipoff@gmail.com"><img alt='gmail.png' class="si" src="images/gmail.png"></a></span>
+                <span><a href="https://www.instagram.com/tipoff_newsletter/"><img alt='instagram.png' class="si" src="images/instagram.png"></a></span>
+                <span><a href="https://www.linkedin.com/company/tipoff-newsletter?trk=similar-pages_result-card_full-click"><img class="si" src="images/linkedin.png" alt='linkedin.png'></a></span>
+                <br /><br />
+        </footer>
+        <link rel="stylesheet" type="text/css" href="/" media="print" />
+        <script>
+            var header = document.getElementsByTagName('header')[0];
+            var headerHeight = header.offsetHeight;
+            var x = header.offsetWidth;
+            var navBtn1 = document.getElementsByClassName[0];
+            logo.style.paddingLeft = 2 + x/40 + 'px';
+            var i;
+            for (i=0;i<4;i++){
+                var navBtn = document.getElementsByClassName('nav-btn')[i]
+                navBtn.style.paddingLeft = 0.012*x + 3 + 'px';
+                navBtn.style.paddingRight = 0.012*x + 3 + 'px';
+            }
+            function know(){
+                var change = document.getElementById('ourpText1');
+                change.style.display = 'none';
+                var show = document.getElementById('ourpText2');
+                show.style.display='block';
+                window.scrollTo(0,1300);
+            }
+        </script>
+        <script>
+var slide1 = document.getElementById('slide-1');
+var i;
+var j;
+var interval = setInterval(myTimer, 1000);
+t=0;
+function myTimer(){
+    t+=1
+}
+var interval2 = setInterval(sliding, 1000);
+interval2;
+function sliding(){
+    if(t<5){
+        var circle = document.getElementsByClassName('circle')[0];
+        circle.style.backgroundColor='white';
+        document.getElementsByClassName('circle')[1].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[2].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[3].style.backgroundColor = 'grey';
+    }
+    else if(t<11){
+        var circle = document.getElementsByClassName('circle')[1];
+        circle.style.backgroundColor='white';
+        document.getElementsByClassName('circle')[0].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[2].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[3].style.backgroundColor = 'grey';
+    }
+    else if(t<17){
+        var circle = document.getElementsByClassName('circle')[2];
+        circle.style.backgroundColor='white';
+        document.getElementsByClassName('circle')[0].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[1].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[3].style.backgroundColor = 'grey';
+    }
+    else if(16<t){
+        var circle = document.getElementsByClassName('circle')[3];
+        circle.style.backgroundColor='white';
+        document.getElementsByClassName('circle')[0].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[1].style.backgroundColor = 'grey';
+        document.getElementsByClassName('circle')[2].style.backgroundColor = 'grey';
+    }
+    if(t==5){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.animation='slide1 2s 1';
+        
+    }
+    }
+    if (t==7){
+        for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='100%';
+    }}
+    if (t==11){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.animation='slide2 2s 1';
+        
+    }}
+    if (t==13){
+        for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='200%';
+    }}
+    if (t==17){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.animation='slide3 2s 1';
+        
+    }}
+    if (t==19){
+        for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='300%';
+    }}
+    if (t==23){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.animation='slide4 2s 1';
+        
+    }}
+    if (t==25){
+        for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='00%';
+        t=-1;
+    }}
+        
+}
+var number = document.getElementById('number');
+var speed = 150;
+var sign = document.getElementById('sign');
+window.onload = updatecount();
+function updatecount(){
+    var count = +number.innerText;
+    inc(count);
+}
+function inc(count){
+    if (count<300){
+        number.innerText = count + 1;
+        setTimeout(updatecount,1);
+    }
+    else{
+        number.innerText = 300;
+        sign.style.display='inline-block';
+    }
+}
+function goto1(){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='00%';
+        t=-1;
+    }
+}
+function goto2(){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='100%';
+        t=7;
+    }
+}
+function goto3(){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='200%';
+        t=13;
+    }
+}
+function goto4(){
+    for (i=0;i<4;i++){
+        var slide = document.getElementsByClassName('slide')[i]
+        slide.style.right='300%';
+        t=19;
+    }
+}
+        </script>
+    </body>
 </html>

@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "koliko Light";
+ 	src: url("../font/koliko-Light.ttf"); 
+}
+body{
+    background-color: black;
+    text-align:center;
+}
+main{
+    width:50%;
+    margin:auto;
+}
+header{
+    font-family:"koliko Light";
+    font-size:140px;
+    text-align:center;
+    color:#ffb300;
+    position:static;
+    top:25%;
+    left:25%;
+}
+p{
+    font-family: "Montserrat";
+    color:whitesmoke;
+    position:relative;
+    top:35%;
+    font-size:50px;
+}
+@media only screen and (max-width:796px){
+    header{
+        font-size:25vw;
+    }
+    main{
+        width:100%;
+    }
+    p{
+        font-size:7vw;
+    }
+}
